@@ -1,19 +1,20 @@
 <script setup>
-  import { ref } from "vue";
-  import { RouterLink, RouterView } from 'vue-router'
+import { ref } from "vue";
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-    <nav>
-      <RouterLink class="homeLink" to = "/"> Home </RouterLink>
-      <RouterLink class="aboutLink" to = "/about"> About </RouterLink>
-      <RouterLink class="userAuthLink" to = "/UserAuth"> Login / SignUp </RouterLink>
-    </nav>  
-  <RouterView/>
+  <nav>
+    <RouterLink class="homeLink" to="/"> Home </RouterLink>
+    <RouterLink class="aboutLink" to="/about"> About </RouterLink>
+    <RouterLink class="userAuthLink" to="/UserAuth">
+      Login / SignUp
+    </RouterLink>
+  </nav>
+  <RouterView />
 </template>
 
 <style scoped>
-
 nav {
   display: flex;
   position: absolute;

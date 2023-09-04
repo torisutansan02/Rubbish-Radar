@@ -1,4 +1,4 @@
-@import './base.css';
+@import "./base.css";
 
 .userInput {
   margin-bottom: 20%;
@@ -30,9 +30,9 @@
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  height: 175px;    
+  height: 175px;
   width: 175px;
-  object-fit: cover; 
+  object-fit: cover;
   border-style: solid;
   border-color: hsla(160, 100%, 37%, 1);
   border-radius: 80%;
@@ -47,17 +47,17 @@ a,
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.7;
   text-align: justify;
 }
 
 .description {
-  max-height: 200px; 
-  overflow: auto;   
+  max-height: 200px;
+  overflow: auto;
 }
 
-h1{
+h1 {
   color: #31c48d;
   padding-bottom: 15px;
   margin-bottom: 20px;
@@ -102,10 +102,10 @@ a:hover {
 
 @media (max-width: 768px) {
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
   p {
-      font-size: 1em;
+    font-size: 1em;
   }
 }
 
@@ -137,7 +137,7 @@ li.aboutUs:before {
   position: absolute;
   left: 0;
   top: 0;
-  content: '🌿';
+  content: "🌿";
 }
 
 .trashButtons {
@@ -176,7 +176,7 @@ header {
 }
 
 input {
-  text-align:left;
+  text-align: left;
   width: 80%;
   padding: 10px;
   border-radius: 5px;
