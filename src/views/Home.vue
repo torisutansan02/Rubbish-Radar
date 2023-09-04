@@ -367,11 +367,8 @@ export default {
 .pollpic {
   opacity: 60%;
   width: 100%;
-  height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: auto;
+  height: auto;
+  object-fit: fill;
 }
 .logo {
   position: absolute;

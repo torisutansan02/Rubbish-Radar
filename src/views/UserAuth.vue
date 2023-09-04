@@ -170,7 +170,6 @@ export default {
   object-fit: fill;
   width: 100%;
   height: auto;
-  margin-top: -25%;
   opacity: 30%;
 }
 .social-button {

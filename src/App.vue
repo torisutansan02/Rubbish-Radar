@@ -24,8 +24,8 @@ nav {
   width: 100%;
   max-height: 100%;
   justify-content: right;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 nav a.router-link-exact-active {
