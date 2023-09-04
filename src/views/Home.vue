@@ -14,30 +14,6 @@
   <Map></Map>
   <body>
     <UserInputMap></UserInputMap>
-    <div ref="userIn" class="userInput">
-      <!-- <h1 style="text-align: center;">Add Trash Can</h1> -->
-      <h3 style="border-bottom: 0; text-align: center">
-        Add trash from your location
-      </h3>
-      <br />
-      <input v-model="additionalInfo" placeholder="Info About Location" />
-      <br />
-      <button id="leftButton" class="trashButtons" @click="addTrashCan">
-        Add Trash Can
-      </button>
-      <!-- <p v-if="location">Trash can added at location: {{location.latitude}}, {{location.longitude}}</p> -->
-      <button id="midButton" class="trashButtons" @click="addRecyclingBin">
-        Add Recycling Bin
-      </button>
-      <!-- <p v-if="location">Recycling Bin added at location: {{location.latitude}}, {{location.longitude}}</p> -->
-      <button id="rightButton" class="trashButtons" @click="addCombustible">
-        Add Combustable Bin
-      </button>
-      <br />
-      <p v-if="location">
-        Added at location: {{ location.latitude }}, {{ location.longitude }}
-      </p>
-    </div>
   </body>
 </template>
 
