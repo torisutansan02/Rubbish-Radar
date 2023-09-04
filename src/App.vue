@@ -1,10 +1,9 @@
 <script setup>
-import { ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <nav>
+  <nav class>
     <RouterLink class="homeLink" to="/"> Home </RouterLink>
     <RouterLink class="aboutLink" to="/about"> About </RouterLink>
     <RouterLink class="userAuthLink" to="/UserAuth">
@@ -23,10 +22,10 @@ nav {
   top: 0;
   background-color: #31c48d;
   width: 100%;
+  max-height: 100%;
   justify-content: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  z-index: 9999;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 nav a.router-link-exact-active {
@@ -35,26 +34,23 @@ nav a.router-link-exact-active {
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: transparent;
-  background-color: #3be1a4;
-  border-radius: 30px;
+  background-color: white;
 }
 
 nav a {
-  margin-right: 10px;
+  font-size: 16px;
+  margin-right: 15px;
   color: black;
   display: block;
-  padding: 0 2rem;
-  border-left: 1px solid var(--color-border);
+  padding: 0 3rem;
   transition: 0.5s;
   text-decoration: none;
 }
 
 nav a:hover {
   /* font-weight: bold; */
-  background-color: #3be1a4;
-  border-radius: 30px;
-  /* padding: 10px; */
+  background-color: white;
+  border-radius: 50px;
 }
 
 nav a:first-of-type {

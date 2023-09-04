@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import UserInput from "../views/UserInput.vue";
-import MapTest from "../views/MapTest.vue";
 import UserAuth from "../views/UserAuth.vue";
 
 const router = createRouter({
@@ -21,11 +20,6 @@ const router = createRouter({
       path: "/UserInput",
       name: "UserInput",
       component: UserInput,
-    },
-    {
-      path: "/maptest",
-      name: "maptest",
-      component: MapTest,
     },
     {
       path: "/UserAuth",

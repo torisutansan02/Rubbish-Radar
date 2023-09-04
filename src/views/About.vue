@@ -82,44 +82,6 @@
       </p>
 
       <h2>Who Are We?</h2>
-      <!-- <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/andrew-bremond-469731223/" target="blank"> Andrew Bremond:</a>
-          As someone who loves to travel, I would like to have an app that allows me to locate public services such as trash 
-          can to avoid carrying trash around with me all day. As a CS major at University of California, Riverside, I wanted 
-          to challenge myself to find a solution that helps us find trash cans and hopefully makes the streets look cleaner.
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/torisutan/" target="_blank">Tristan Cai: </a>
-          I'm familiar with the NextJS framework and I enjoy hiking. I don't like to park in places where people leave their carts out. 
-          Nor do I like seeing trash on trails when I go out hiking.
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/arjun-bhalla-3bb2aa210/" target="_blank">Arjun Bhalla:</a>
-          I am a Computer Science major at the University of California, San Diego. On this web application, 
-          I have worked on bringing the map implementation by working with the Google Maps API. As a frequent traveler, 
-          I strongly believe and see the value in Rubbish Radar as I have found myself looking for garbage disposal 
-          in so many places and always looking and scanning for a trash can.
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/julian-gonzalez-b49665203/" target="_blank">Julian Gonzalez:</a>
-          I'm a third year computer engineering student at University of California, Riverside. I believe public amenities 
-          such as trash disposables are an integral part of our lives and should be easily accessible. I hope this project 
-          challenges my mind to new horizons. 
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/kush-momaya/" target="_blank"> Kush Momaya:</a>
-          I'm a Data Science major at UCR, so this project was a step outside of my comfort zone because 
-          I was working with frontend development. I worked with the setup of the firebase database and 
-          creating a way for users to input their own trash can locations onto the map. This project really 
-          resonated with me because I am a frequent traveler and I enjoy going to national parks, and finding 
-          trash cans can be a struggle when going to new places. 
-        </li>
-      </ul> -->
 
       <table>
         <tr>

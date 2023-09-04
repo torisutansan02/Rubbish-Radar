@@ -54,9 +54,8 @@ export default {
 
 <style scoped>
 div #map {
-  height: 92vh;
-  width: 92vw;
+  height: 100vh;
+  width: 100%;
   color: black;
-  margin-top: 5%;
 }
 </style>

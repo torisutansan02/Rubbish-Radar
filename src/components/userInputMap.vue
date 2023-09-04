@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import { FirebaseError } from "firebase/app";
 import Map from "../components/Map.vue";
 import { db } from "../firebaseResources";
 import {
@@ -53,31 +52,33 @@ export default {
   methods: {
     async addCustom() {
       if ("geolocation" in navigator) {
-        try {
-          const position = await new Promise((resolve, reject) => {
-            navigator.geolocation.getCurrentPosition(resolve, reject);
-          });
+        if (this.userLoggedIn) {
+          try {
+            const position = await new Promise((resolve, reject) => {
+              navigator.geolocation.getCurrentPosition(resolve, reject);
+            });
 
-          this.location = {
-            latitude: this.latit,
-            longitude: this.longit,
-            info: this.additionalInfo,
-            type: this.binType,
-            upvoteCount: 0,
-            downvoteCount: 0,
-          };
+            this.location = {
+              latitude: this.latit,
+              longitude: this.longit,
+              info: this.additionalInfo,
+              type: this.binType,
+              upvoteCount: 0,
+              downvoteCount: 0,
+            };
 
-          const docReference = await addDoc(collection(db, "locations"), {
-            location: this.location,
-          });
-          this.additionalInfo = "";
-          this.latit = "";
-          this.longit = "";
-        } catch (error) {
-          console.error("Error getting location: ", error);
+            const docReference = await addDoc(collection(db, "locations"), {
+              location: this.location,
+            });
+            this.additionalInfo = "";
+            this.latit = "";
+            this.longit = "";
+          } catch (error) {
+            console.error("Error getting location: ", error);
+          }
+        } else {
+          console.error("Location services not available in this browser");
         }
-      } else {
-        console.error("Location services not available in this browser");
       }
     },
     async addTrashCan() {
