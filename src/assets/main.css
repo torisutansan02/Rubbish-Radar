@@ -1,122 +1,127 @@
 @import "./base.css";
 
-.userInput {
-  margin-bottom: 20%;
-  margin-top: 10%;
-}
-
-#app {
-  width: 100%;
-  margin: 0 auto;
-  font-weight: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.about {
-  padding: 40px 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 2.5%;
-  /* height: 100vh; */
-}
-
-#pfp {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 175px;
-  width: 175px;
-  object-fit: cover;
-  border-style: solid;
-  border-color: hsla(160, 100%, 37%, 1);
-  border-radius: 80%;
-  display: block;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.7;
-  text-align: justify;
-}
-
-.description {
-  max-height: 200px;
-  overflow: auto;
-}
-
-h1 {
-  color: #31c48d;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  font-size: 2.5em;
-  /* margin-top: 25rem; */
-  text-align: left;
-}
-
-h2 {
-  color: #31c48d;
-  font-size: 1.5rem;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #31c48d;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-p {
-  line-height: 3rem;
-  margin-bottom: 20px;
-  text-align: justify;
-  font-size: 1.1em;
-  margin-top: 30px;
-}
-
-a {
-  text-decoration: none;
-  color: #31c48d;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #27a577;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-  p {
-    font-size: 1em;
-  }
-}
-
 @media (min-width: 1024px) {
+  .userInput {
+    margin-bottom: 20%;
+    margin-top: 10%;
+  }
+
+  #app {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about {
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.5%;
+  }
+
+  #pfp {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 175px;
+    width: 175px;
+    object-fit: cover;
+    border-style: solid;
+    border-color: hsla(160, 100%, 37%, 1);
+    border-radius: 80%;
+    display: block;
+  }
+
+  a,
+  .green {
+    text-decoration: none;
+    color: hsla(160, 100%, 37%, 1);
+    transition: 0.4s;
+  }
+
   body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.7;
+    text-align: justify;
     line-height: 1.7;
     margin-top: 4rem;
     padding: 0;
   }
 
+  .description {
+    max-height: 200px;
+    overflow: auto;
+  }
+
+  h1 {
+    color: #31c48d;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    /* margin-top: 25rem; */
+    text-align: left;
+  }
+
+  h2 {
+    color: #31c48d;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #31c48d;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  p {
+    line-height: 3rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+    margin-top: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #31c48d;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #27a577;
+  }
+
   #app {
     display: flex;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  li {
+    line-height: 2rem;
+  }
+
+  .description td {
+    text-align: justify;
+    vertical-align: text-top;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
   }
 }
 
@@ -201,4 +206,246 @@ input {
   border-radius: 0;
   margin-left: 0;
   margin-right: 0;
+}
+
+div #map {
+  height: 100vh;
+  width: 100%;
+  color: black;
+}
+.pollpic {
+  width: 100%;
+}
+.logo {
+  position: absolute;
+  object-fit: contain;
+  width: 55%;
+  height: auto;
+  position: absolute;
+  top: 5%;
+}
+.scrollButton {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  top: 10px;
+  left: 10px;
+  display: grid;
+  position: absolute;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  z-index: 99;
+}
+.scrollButton:hover {
+  background-color: #b9b9b9bc;
+  transition: 0.5s;
+}
+.scrollButton:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.scrollButton:active {
+  background-color: rgba(255, 255, 255, 0.253);
+}
+.scrollButtonContainer {
+  display: flex;
+}
+
+.userLogin {
+  margin-top: 0%;
+  width: 40%;
+  min-height: 60%;
+  padding: 3%;
+  color: darkgray;
+  position: absolute;
+
+  background-color: rgb(58, 58, 58);
+  border-radius: 15%;
+  box-shadow: 0 0 20px 5px rgba(15, 15, 15);
+}
+.binpic {
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+}
+.social-button {
+  background-color: #31c48d;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  min-width: 180px;
+  min-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110%;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  max-width: 100%;
+  width: 60%;
+}
+.social-button img {
+  object-fit: contain;
+  width: 7%;
+  height: auto;
+  text-align: left;
+}
+.inputBox {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(15, 15, 15);
+  border: 0;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (max-width: 700px) {
+  #app {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: normal;
+    display: flex;
+  }
+
+  input {
+    visibility: hidden;
+  }
+
+  body {
+    font-family: "Arial", sans-serif;
+    text-align: justify;
+    line-height: 1.7;
+    padding: 0;
+  }
+
+  h1 {
+    visibility: hidden;
+    font-size: 1rem;
+  }
+
+  h3 {
+    visibility: hidden;
+  }
+
+  p {
+    visibility: hidden;
+    font-size: 1rem;
+  }
+
+  .scrollButtonContainer {
+    visibility: hidden;
+  }
+
+  .scrollButton {
+    visibility: hidden;
+  }
+
+  #map {
+    position: absolute;
+    margin-top: 11rem;
+  }
+
+  nav {
+    display: flex;
+    position: absolute;
+    font-size: 0.8rem;
+    right: 0;
+    top: 0;
+    background-color: #31c48d;
+    width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  nav a.router-link-exact-active {
+    color: black;
+    font-weight: bold;
+  }
+
+  nav a.router-link-exact-active:hover {
+    background-color: white;
+  }
+
+  nav a {
+    font-size: 12px;
+    color: black;
+    padding: 0 1rem;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: white;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+
+  nav a:first-of-type {
+    border: 0;
+  }
+
+  .pollpic {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    left: 0px;
+  }
+
+  .logo {
+    visibility: hidden;
+    position: absolute;
+    object-fit: contain;
+    width: 55%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+  }
+
+  .scrollButton {
+    visibility: hidden;
+  }
+
+  #rightButton {
+    visibility: hidden;
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #leftButton {
+    visibility: hidden;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #midButton {
+    visibility: hidden;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  div #map {
+    height: 50vh;
+    width: 100%;
+    color: black;
+  }
 }

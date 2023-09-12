@@ -3,7 +3,6 @@
   <img class="logo" src="../images/new_logo.png" alt="Rubbish_Radar_Logo_pic" />
   <div class="scrollButtonContainer">
     <button class="scrollButton" @click="scrollToMap">Go to Map</button>
-    <button class="scrollButton" @click="scrollToUserIn">Add to Map</button>
   </div>
 
   <div ref="mapArea"></div>
@@ -193,92 +192,6 @@ export default {
         });
       }
     },
-    async addTrashCan() {
-      if ("geolocation" in navigator) {
-        try {
-          const position = await new Promise((resolve, reject) => {
-            navigator.geolocation.getCurrentPosition(resolve, reject);
-          });
-
-          this.location = {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            info: this.additionalInfo,
-            type: "Trash",
-            upvoteCount: 0,
-            downvoteCount: 0,
-            userUpvotes: [],
-            userDownvotes: [],
-          };
-          const docReference = await addDoc(collection(db, "locations"), {
-            location: this.location,
-          });
-          this.additionalInfo = "";
-        } catch (error) {
-          console.error("Error getting location: ", error);
-        }
-      } else {
-        console.error("Location services not available in this browser");
-      }
-    },
-    async addRecyclingBin() {
-      if ("geolocation" in navigator) {
-        try {
-          const position = await new Promise((resolve, reject) => {
-            navigator.geolocation.getCurrentPosition(resolve, reject);
-          });
-
-          this.location = {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            info: this.additionalInfo,
-            type: "Recycle",
-            upvoteCount: 0,
-            downvoteCount: 0,
-            userUpvotes: [],
-            userDownvotes: [],
-          };
-
-          const docReference = await addDoc(collection(db, "locations"), {
-            location: this.location,
-          });
-          this.additionalInfo = "";
-        } catch (error) {
-          console.error("Error getting location: ", error);
-        }
-      } else {
-        console.error("Location services not available in this browser");
-      }
-    },
-    async addCombustible() {
-      if ("geolocation" in navigator) {
-        try {
-          const position = await new Promise((resolve, reject) => {
-            navigator.geolocation.getCurrentPosition(resolve, reject);
-          });
-
-          this.location = {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            info: this.additionalInfo,
-            type: "Combustible",
-            upvoteCount: 0,
-            downvoteCount: 0,
-            userUpvotes: [],
-            userDownvotes: [],
-          };
-
-          const docReference = await addDoc(collection(db, "locations"), {
-            location: this.location,
-          });
-          this.additionalInfo = "";
-        } catch (error) {
-          console.error("Error getting location: ", error);
-        }
-      } else {
-        console.error("Location services not available in this browser");
-      }
-    },
     async getLocations() {
       try {
         const locCollection = collection(db, "locations");
@@ -332,12 +245,6 @@ export default {
               "location.userDownvotes": updatedUserArr,
             });
             console.log("Downvoted");
-
-            // if (currentData.location.downvoteCount > currentData.location.upVoteCount) {
-            //   docRef = await addDoc(collection(db, "locations"), {
-            //     location: this.location,
-            //   });
-            // }
           }
         } catch (error) {
           console.log("Error downvoting: ", error);
@@ -365,69 +272,6 @@ export default {
 </script>
 
 <style>
-.pollpic {
-  opacity: 60%;
-  width: 100%;
-  height: auto;
-  object-fit: fill;
-}
-.logo {
-  position: absolute;
-  object-fit: contain;
-  width: 55%;
-  height: auto;
-  position: absolute;
-  top: 5%;
-}
-.scrollButton {
-  text-align: center;
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.3s ease;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 130%;
-  font-weight: 120%;
-  width: 150px;
-  height: 40px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: -170px;
-  margin-bottom: 2px;
-  position: relative;
-  z-index: 99;
-}
-.scrollButton:hover {
-  background-color: #b9b9b9bc;
-  transition: 0.5s;
-}
-.scrollButton::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 5px;
-  top: 90%;
-  left: 0;
-  transition: transform 0.5s;
-  transform: scaleX(0);
-  transform-origin: center;
-  background-color: #31c48d;
-  border-radius: 30px;
-}
-.scrollButton:hover::after {
-  transform: scaleX(1);
-  transform-origin: center;
-}
-.scrollButton:active {
-  background-color: rgba(255, 255, 255, 0.253);
-}
-.scrollButtonContainer {
-  display: flex;
+@media (min-width: 1024px) {
 }
 </style>

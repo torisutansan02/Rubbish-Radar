@@ -203,27 +203,9 @@
 </template>
 
 <style scoped>
-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  border-collapse: collapse;
+@media (min-width: 1024px) {
 }
 
-td {
-  text-align: center;
-  vertical-align: middle;
-}
-
-li {
-  line-height: 2rem;
-}
-
-.description td {
-  text-align: justify;
-  vertical-align: text-top;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
+@media (max-width: 700px) {
 }
 </style>

@@ -46,7 +46,6 @@
 
       <template v-if="userNotFound"> <br />User not found </template>
       <template v-if="invalidPassword"> <br />Invalid password </template>
-
     </template>
     <template v-else>
       You are already signed in.
@@ -142,54 +141,4 @@ export default {
 </script>
 
 <style>
-.userLogin {
-  margin-top: 0%;
-  width: 40%;
-  min-height: 60%;
-  padding: 3%;
-  color: darkgray;
-  position: absolute;
-
-  background-color: rgb(58, 58, 58);
-  border-radius: 15%;
-  box-shadow: 0 0 20px 5px rgba(15, 15, 15);
-}
-.binpic {
-  object-fit: fill;
-  width: 100%;
-  height: auto;
-  opacity: 30%;
-}
-.social-button {
-  background-color: #31c48d;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-  min-width: 180px;
-  min-height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 110%;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  max-width: 100%;
-  width: 60%;
-}
-.social-button img {
-  object-fit: contain;
-  width: 7%;
-  height: auto;
-  text-align: left;
-}
-.inputBox {
-  border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgba(15, 15, 15);
-  border: 0;
-}
 </style>

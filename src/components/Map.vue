@@ -48,9 +48,4 @@ export default {
 </script>
 
 <style scoped>
-div #map {
-  height: 100vh;
-  width: 100%;
-  color: black;
-}
 </style>
