@@ -26,12 +26,7 @@ export default {
   },
   mounted() {
     if (!window.google) {
-      // const script = document.createElement('script');
-      // script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBkkgbhppn40r-DjzpnkAg0q7waZKQzsr8&callback=initMap&map_ids=4af310b3e8d84ead';
-      // document.body.appendChild(script);
-      // script.onload = this.initMap;
     } else {
-      //this.initMap();
     }
   },
   methods: {

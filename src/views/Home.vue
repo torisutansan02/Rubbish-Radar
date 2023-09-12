@@ -52,7 +52,7 @@ export default {
     if (!window.google) {
       const script = document.createElement("script");
       script.src =
-        "https://maps.googleapis.com/maps/api/js?key=AIzaSyBkkgbhppn40r-DjzpnkAg0q7waZKQzsr8&callback=initMap&map_ids=4af310b3e8d84ead";
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyA5myGcTPo74r9Wbuska9XYUaPcD47fsUQ&callback=initMap&map_ids=c843d678fb7a23f3";
       document.body.appendChild(script);
       script.onload = async () => {
         await this.getLocations();
@@ -68,7 +68,7 @@ export default {
       const map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 41, lng: -87 },
         zoom: 16,
-        mapId: "4af310b3e8d84ead",
+        mapId: "c843d678fb7a23f3",
       });
 
       const infoWindow = new google.maps.InfoWindow({
@@ -160,13 +160,14 @@ export default {
         let longCoor = locationObj.location.longitude;
         let upvoteVar = locationObj.location.upvoteCount;
         let downvoteVar = locationObj.location.downvoteCount;
+
         google.maps.event.addListener(marker, "click", () => {
           infoWindow.setContent(`
-              <div>${locationVar}</div>
+              <div>"${locationVar}"</div>
               <div>${type}</div>
-              <div>(${latCoor}, ${longCoor})</div>
-              <div>Upvote Count: ${upvoteVar}</div>
-              <div>Downvote Count: ${downvoteVar}</div>
+              <div>Upvotes: ${upvoteVar}</div>
+              <div>Downvotes: ${downvoteVar}</div>
+              <a href="https://google.com/maps/place/${latCoor},${longCoor}"> View on Google Maps </a>
               ${
                 this.userLoggedIn
                   ? `

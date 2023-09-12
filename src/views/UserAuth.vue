@@ -47,11 +47,6 @@
       <template v-if="userNotFound"> <br />User not found </template>
       <template v-if="invalidPassword"> <br />Invalid password </template>
 
-      <!-- <p>
-        <button class="social-button" @click="socialLogin">
-          <img alt="Google Logo" src="../assets/google-logo4.png">
-        </button>
-      </p> -->
     </template>
     <template v-else>
       You are already signed in.
@@ -154,17 +149,10 @@ export default {
   padding: 3%;
   color: darkgray;
   position: absolute;
-  /* background-image: url("../images/trashman.jpg"); 
-    background-size: 100%;
-    background-position-y: center;    */
 
   background-color: rgb(58, 58, 58);
   border-radius: 15%;
   box-shadow: 0 0 20px 5px rgba(15, 15, 15);
-  /* border-width: 100%;
-    border-style:solid;
-    border-color:grey;
-    border-bottom-width: 5%; */
 }
 .binpic {
   object-fit: fill;
