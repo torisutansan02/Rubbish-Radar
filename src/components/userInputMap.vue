@@ -80,6 +80,7 @@ export default {
           console.error("Location services not available in this browser");
         }
       }
+      window.location.reload();
     },
     async addTrashCan() {
       if ("geolocation" in navigator) {
@@ -108,6 +109,7 @@ export default {
       } else {
         console.error("Location services not available in this browser");
       }
+      window.location.reload();
     },
     async addRecyclingBin() {
       if ("geolocation" in navigator) {
@@ -137,6 +139,7 @@ export default {
       } else {
         console.error("Location services not available in this browser");
       }
+      window.location.reload();
     },
     async addCombustible() {
       if ("geolocation" in navigator) {
@@ -166,6 +169,7 @@ export default {
       } else {
         console.error("Location services not available in this browser");
       }
+      window.location.reload();
     },
   },
 };
