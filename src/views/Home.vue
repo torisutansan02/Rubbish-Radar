@@ -94,7 +94,7 @@ export default {
               infoWindow.setPosition(mapsMouseEvent.latLng);
               infoWindow.setContent(
                 mapsMouseEvent.latLng.lat() +
-                  " / " +
+                  ", " +
                   mapsMouseEvent.latLng.lng(),
               );
               infoWindow.open(map);
@@ -162,11 +162,11 @@ export default {
 
         google.maps.event.addListener(marker, "click", () => {
           infoWindow.setContent(`
-              <div>"${locationVar}"</div>
+              <div>${locationVar}</div>
               <div>${type}</div>
               <div>Upvotes: ${upvoteVar}</div>
               <div>Downvotes: ${downvoteVar}</div>
-              <a href="https://google.com/maps/place/${latCoor},${longCoor}"> View on Google Maps </a>
+              <a href="https://google.com/maps/place/${latCoor},${longCoor}", target = "_blank"> View on Google Maps </a>
               ${
                 this.userLoggedIn
                   ? `

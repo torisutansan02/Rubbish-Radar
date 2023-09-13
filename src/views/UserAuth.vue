@@ -105,6 +105,7 @@ export default {
           this.userNotFound = true;
         }
       }
+      window.location.reload();
     },
     async createUser() {
       try {
@@ -135,6 +136,7 @@ export default {
       } catch (err) {
         console.error("Error in socialLogin", err);
       }
+      window.location.reload();
     },
   },
 };
