@@ -310,50 +310,53 @@ div #map {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
+  div .about {
+    max-width: 100%;
+  }
   #app {
     width: 100%;
     margin: 0 auto;
     font-weight: normal;
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   input {
-    visibility: hidden;
   }
 
   body {
     font-family: "Arial", sans-serif;
-    text-align: justify;
     line-height: 1.7;
-    padding: 0;
+    max-width: 100%;
   }
 
   h1 {
-    visibility: hidden;
-    font-size: 1rem;
+    text-align: left;
+  }
+  
+  h2 {
+    text-align: left;
   }
 
   h3 {
-    visibility: hidden;
+    text-align: left;
   }
 
   p {
-    visibility: hidden;
+    text-align: left;
     font-size: 1rem;
   }
 
   .scrollButtonContainer {
-    visibility: hidden;
   }
 
   .scrollButton {
-    visibility: hidden;
   }
 
   #map {
-    position: absolute;
-    margin-top: 11rem;
+    margin-top: 16rem;
   }
 
   nav {
@@ -399,7 +402,6 @@ div #map {
 
   .pollpic {
     position: absolute;
-    width: 100%;
     top: 30px;
     left: 0px;
   }
@@ -419,33 +421,50 @@ div #map {
   }
 
   #rightButton {
-    visibility: hidden;
+    font-size: 12px;
     border-radius: 0;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-left: 0;
-    margin-right: 0;
+    border-radius: 15px;
+    margin: 5px;
   }
 
   #leftButton {
-    visibility: hidden;
+    font-size: 12px;
     border-radius: 0;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    margin-left: 0;
-    margin-right: 0;
+    border-radius: 15px;
+    margin: 5px;
   }
 
   #midButton {
-    visibility: hidden;
+    font-size: 12px;
     border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
+    border-radius: 15px;
+    margin: 5px;
   }
 
   div #map {
     height: 50vh;
-    width: 100%;
     color: black;
+  }
+
+  table {
+    visibility: hidden;
+  }
+
+  tr {
+    visibility: hidden;
+  }
+
+  td {
+    visibility: hidden;
+  }
+
+  ul {
+    visibility: hidden;
+    max-width: 100%;
+  }
+
+  li {
+    visibility: hidden;
+    max-width: 100%;
   }
 }
