@@ -203,9 +203,4 @@
 </template>
 
 <style scoped>
-@media (min-width: 1024px) {
-}
-
-@media (max-width: 700px) {
-}
 </style>
