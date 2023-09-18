@@ -25,15 +25,15 @@ import { RouterLink, RouterView } from "vue-router";
     width: 100%;
     max-height: 100%;
     justify-content: right;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin: auto;
     border-bottom: 1px solid #ddd;
   }
 
   nav a.router-link-exact-active {
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
   }
 
   nav a.router-link-exact-active:hover {
@@ -42,22 +42,21 @@ import { RouterLink, RouterView } from "vue-router";
 
   nav a {
     font-size: 16px;
-    margin-right: 15px;
     color: black;
     display: block;
-    padding: 0 3rem;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
     transition: 0.5s;
     text-decoration: none;
   }
 
   nav a:hover {
-    /* font-weight: bold; */
     background-color: white;
     border-radius: 50px;
-  }
-
-  nav a:first-of-type {
-    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .pollpic {
