@@ -17,24 +17,21 @@
   }
 
   .about {
-    padding: 40px 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 2.5%;
+    top: 100px;
+    position: absolute;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   #pfp {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     height: 175px;
     width: 175px;
-    object-fit: cover;
-    border-style: solid;
-    border-color: hsla(160, 100%, 37%, 1);
-    border-radius: 80%;
+    border: 3px solid;
+    border-radius: 20px;
     display: block;
   }
 
@@ -47,76 +44,61 @@
 
   body {
     font-family: "Arial", sans-serif;
-    line-height: 1.7;
-    text-align: justify;
-    line-height: 1.7;
-    margin-top: 4rem;
-    padding: 0;
-  }
-
-  .description {
-    max-height: 200px;
-    overflow: auto;
   }
 
   h1 {
-    color: #31c48d;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    color: #00ffa2;
+    font-size: 40px;
+    text-align: center;
   }
 
   h2 {
-    color: #31c48d;
-    font-size: 1.5rem;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #31c48d;
-    margin-bottom: 20px;
-    text-align: left;
+    font-weight: bold;
+    color: rgb(147, 255, 219);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    border-bottom: 3px solid #15cb88;
+    border-radius: 10px;
   }
 
-  p {
-    line-height: 3rem;
-    margin-bottom: 20px;
+  .description {
+    text-indent: 40px;
+    line-height: 50px;
     text-align: justify;
-    font-size: 1.1em;
-    margin-top: 30px;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #303030;
+    color: white;
   }
 
   a {
-    text-decoration: none;
     color: #31c48d;
     transition: all 0.3s ease;
   }
 
   a:hover {
-    text-decoration: underline;
     color: #27a577;
   }
 
   table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-collapse: collapse;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   td {
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  li {
-    line-height: 2rem;
-  }
-
-  .description td {
-    text-align: justify;
-    vertical-align: text-top;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
+    vertical-align: text-top;
+    text-align: center;
+    vertical-align: middle;
   }
 
   ul {
@@ -126,15 +108,11 @@
   }
 
   ul li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 25px;
+    text-align: justify;
+    margin: 30px;
   }
 
   li.aboutUs:before {
-    position: absolute;
-    left: 0;
-    top: 0;
     content: "🌿";
   }
 
@@ -165,12 +143,6 @@
 
   button:active {
     background-color: white;
-  }
-
-  header {
-    text-align: center;
-    padding: 100px 10%;
-    min-height: 40vh;
   }
 
   input {
@@ -207,9 +179,12 @@
     width: 100%;
     color: black;
   }
+
   .pollpic {
     width: 100%;
+    margin: auto;
   }
+
   .logo {
     position: absolute;
     object-fit: contain;
@@ -220,13 +195,12 @@
   }
   .scrollButton {
     background-color: white;
-    color: black;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
     display: grid;
     position: absolute;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -249,9 +223,7 @@
   }
 
   .userLogin {
-    margin-top: 0%;
     width: 40%;
-    min-height: 60%;
     padding: 3%;
     color: darkgray;
     position: absolute;
@@ -303,16 +275,58 @@
       background-color: hsla(160, 100%, 37%, 0.2);
     }
   }
+
+  nav {
+    display: flex;
+    position: absolute;
+    font-size: 1rem;
+    right: 0;
+    top: 0;
+    background-color: #31c48d;
+    width: 100%;
+    max-height: 100%;
+    justify-content: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  nav a.router-link-exact-active {
+    color: black;
+    font-weight: bolder;
+  }
+
+  nav a.router-link-exact-active:hover {
+    background-color: white;
+  }
+
+  nav a {
+    font-size: 16px;
+    color: black;
+    display: block;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: white;
+    border-radius: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 @media (max-width: 1023px) {
   .about {
-    max-width: 100%;
-    padding: 40px 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 2.5%;
+    top: 100px;
+    position: absolute;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   #app {
     width: 100%;
@@ -333,28 +347,25 @@
 
   body {
     font-family: "Arial", sans-serif;
-    line-height: 1.7;
-    text-align: justify;
-    line-height: 1.7;
-    margin-top: 4rem;
-    padding: 0;
   }
 
   h1 {
-    color: #31c48d;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    text-align: left;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    color: #00ffa2;
+    font-size: 40px;
+    text-align: center;
   }
 
   h2 {
-    color: #31c48d;
-    font-size: 1.5rem;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #31c48d;
-    margin-bottom: 20px;
-    text-align: left;
+    font-weight: bold;
+    color: rgb(147, 255, 219);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    border-bottom: 3px solid #15cb88;
+    border-radius: 10px;
   }
 
   h3 {
@@ -362,7 +373,17 @@
   }
 
   p {
+    font-size: 14px;
+    text-indent: 40px;
+    line-height: 40px;
     text-align: justify;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #303030;
+    color: white;
   }
 
   .scrollButtonContainer {
@@ -428,8 +449,8 @@
   }
 
   .pollpic {
-    top: 0px;
     width: 100%;
+    margin: auto;
   }
 
   .logo {
@@ -463,16 +484,13 @@
   }
 
   table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-collapse: collapse;
+    margin-bottom: 20px;
   }
 
   td {
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
   }
 
   tr {
@@ -480,48 +498,32 @@
     flex-wrap: wrap;
   }
 
-  li {
-    line-height: 2rem;
-  }
-
-  .description td {
-    text-align: justify;
-    vertical-align: text-top;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-  }
-
   ul {
+    font-size: 14px;
+    line-height: 50px;
     margin-bottom: 20px;
     list-style-type: none;
     text-align: left;
   }
 
   ul li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 25px;
+    text-align: justify;
+    margin: 30px;
   }
 
   li.aboutUs:before {
-    position: absolute;
-    left: 0;
-    top: 0;
     content: "🌿";
   }
 
   #pfp {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     height: 175px;
     width: 175px;
-    object-fit: cover;
-    border-style: solid;
-    border-color: hsla(160, 100%, 37%, 1);
-    border-radius: 80%;
+    border: 3px solid;
+    border-radius: 20px;
     display: block;
   }
 
@@ -531,17 +533,12 @@
     color: black;
   }
 
-  header {
-    text-align: center;
-    padding: 100px 10%;
-    min-height: 40vh;
-  }
-
   .userLogin {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 30px;
+    top: 80px;
+    width: 40%;
+    padding: 20px;
     color: darkgray;
+    position: absolute;
     background-color: rgb(58, 58, 58);
     border-radius: 15%;
     box-shadow: 0 0 20px 5px rgba(15, 15, 15);
@@ -576,7 +573,6 @@
   }
 
   a:hover {
-    text-decoration: underline;
     color: #27a577;
   }
 
@@ -590,11 +586,6 @@
     text-decoration: none;
     color: hsla(160, 100%, 37%, 1);
     transition: 0.4s;
-  }
-
-  .description {
-    max-height: 200px;
-    overflow: auto;
   }
 
   .trashButtons {

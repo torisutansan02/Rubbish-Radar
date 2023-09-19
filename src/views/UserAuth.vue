@@ -2,35 +2,33 @@
   <img class="binpic" src="../images/bins.png" alt="bins pic" />
   <div class="userLogin">
     <template v-if="!userLoggedIn">
-      <h2 style="text-align: center">Login / Sign Up</h2>
-
-      <p style="text-align: left">
-        Email: &nbsp; &nbsp; &nbsp; &nbsp;
-        <input
-          v-model.trim="email"
-          type="text"
-          class="inputBox"
-          placeholder="example@email.com"
-        />
-        <br />
-        Password: &nbsp;
-        <input
-          v-model.trim="password"
-          type="password"
-          class="inputBox"
-          placeholder="password"
-        />
-        <template v-if="password && password.length < 6" style="color: red">
-          <br />Your password must be at least 6 characters
-        </template>
-      </p>
+      <h1 style="text-align: center; margin-top: 0; margin-bottom: 30px">
+        Login / Sign Up
+      </h1>
+      <input
+        v-model.trim="email"
+        type="text"
+        class="inputBox"
+        placeholder="Enter e-mail: test@gmail.com"
+      />
+      <br />
+      <br />
+      <input
+        v-model.trim="password"
+        type="password"
+        class="inputBox"
+        placeholder="Enter password: password123"
+      />
+      <br />
+      <br />
+      <template v-if="password && password.length < 6" style="color: red">
+        <br />Your password must be at least 6 characters
+      </template>
 
       <button class="social-button" @click="createUser">Create User</button>
       <br />
+      <br />
       <button class="social-button" @click="login">Login</button>
-      <br />
-      <br />
-      or
       <br />
       <br />
       <button
@@ -41,8 +39,6 @@
         <img alt="Google Logo" src="../assets/google-logo4.png" />
         &nbsp; &nbsp; Sign in with Google
       </button>
-      <br />
-      <br />
 
       <template v-if="userNotFound"> <br />User not found </template>
       <template v-if="invalidPassword"> <br />Invalid password </template>
