@@ -2,26 +2,28 @@
   <img class="binpic" src="../images/bins.png" alt="bins pic" />
   <div class="userLogin">
     <template v-if="!userLoggedIn">
-      <h1 style="text-align: center; margin-top: 0; margin-bottom: 30px;">Login / Sign Up</h1>
-        <input
-          v-model.trim="email"
-          type="text"
-          class="inputBox"
-          placeholder="Enter e-mail: test@gmail.com"
-        />
-        <br />
-        <br />
-        <input
-          v-model.trim="password"
-          type="password"
-          class="inputBox"
-          placeholder="Enter password: password123"
-        />
-        <br />
-        <br />
-        <template v-if="password && password.length < 6" style="color: red">
-          <br />Your password must be at least 6 characters
-        </template>
+      <h1 style="text-align: center; margin-top: 0; margin-bottom: 30px">
+        Login / Sign Up
+      </h1>
+      <input
+        v-model.trim="email"
+        type="text"
+        class="inputBox"
+        placeholder="Enter e-mail: test@gmail.com"
+      />
+      <br />
+      <br />
+      <input
+        v-model.trim="password"
+        type="password"
+        class="inputBox"
+        placeholder="Enter password: password123"
+      />
+      <br />
+      <br />
+      <template v-if="password && password.length < 6" style="color: red">
+        <br />Your password must be at least 6 characters
+      </template>
 
       <button class="social-button" @click="createUser">Create User</button>
       <br />

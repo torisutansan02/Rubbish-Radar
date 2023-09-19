@@ -6,7 +6,7 @@
       <h1>About Us</h1>
 
       <h2>Our Story</h2>
-      <p>
+      <p class="description">
         At Rubbish Radar, we believe in a world where waste has its rightful
         place. Born out of frustration from not being able to find a nearby
         trash can while on-the-go, we decided that no one should have to hold
@@ -17,7 +17,7 @@
       </p>
 
       <h2>What We Do</h2>
-      <p>
+      <p class="description">
         We provide an easy-to-use, comprehensive web application that allows
         users to submit and locate trash can locations. With every user's
         contribution, our network of trash can locations grows, making our
@@ -25,7 +25,7 @@
       </p>
 
       <h2>Our Mission</h2>
-      <p>
+      <p class="description">
         To create a global community-driven platform where every disposed of
         item finds its way to a garbage disposal promoting easy accessibility to
         our users. Through strategic placement of our thoughtfully designed
@@ -37,7 +37,16 @@
         positive impact on the planet we all call home.
       </p>
 
-      <h2 style = "display: block; justify-content: center; width: 300px; margin-bottom: 40px;">Why Rubbish Radar?</h2>
+      <h2
+        style="
+          display: block;
+          justify-content: center;
+          width: 300px;
+          margin-bottom: 40px;
+        "
+      >
+        Why Rubbish Radar?
+      </h2>
       <ul>
         <li class="aboutUs">
           To create a global community-driven platform where every disposed of
@@ -55,7 +64,16 @@
         </li>
       </ul>
 
-      <h2 style = "display: block; justify-content: center; width: 300px; margin-bottom: 40px;">Get Involved</h2>
+      <h2
+        style="
+          display: block;
+          justify-content: center;
+          width: 300px;
+          margin-bottom: 40px;
+        "
+      >
+        Get Involved
+      </h2>
       <ul>
         <li class="aboutUs">
           Spread the Word: The more users we have, the more locations we can
@@ -72,7 +90,7 @@
       </ul>
 
       <h2>Together, Let's Bin it Right</h2>
-      <p>
+      <p class="description">
         Thank you for being part of the Rubbish Radar journey. Let's make the
         world a cleaner place, one trash can at a time.
       </p>
@@ -105,7 +123,7 @@
               <img id="pfp" src="../images/arjun.jpg" alt="arjun_pic" />
               Arjun Bhalla
             </a>
-            <br>
+            <br />
             <!-- I am a Computer Science major at the University of California, San
             Diego. On this web application, I have worked on bringing the map
             implementation by working with the Google Maps API. As a frequent
