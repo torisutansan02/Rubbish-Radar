@@ -325,19 +325,17 @@
 
 @media (max-width: 1023px) {
   .about {
+    margin-left: 40px;
+    margin-right: 40px;
     top: 100px;
     position: absolute;
-    padding-left: 80px;
-    padding-right: 80px;
   }
   #app {
     width: 100%;
-    margin: 0 auto;
     font-weight: normal;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   input {
@@ -452,16 +450,15 @@
   }
 
   .pollpic {
+    padding-top: 50px;
     width: 100%;
+    margin: auto;
   }
 
   .logo {
+    width: 256px;
     position: absolute;
-    object-fit: contain;
-    width: 55%;
-    height: auto;
-    position: absolute;
-    top: 70px;
+    top: 7%;
   }
 
   #rightButton {
