@@ -204,7 +204,7 @@ export default {
       }
     },
     async upvote(docID) {
-      if (this.userLoggedIn) {
+      if (userLoggedIn) {
         try {
           const currUser = auth.currentUser;
           const docRef = doc(db, "locations", docID);
@@ -228,7 +228,7 @@ export default {
       }
     },
     async downvote(docID) {
-      if (this.userLoggedIn) {
+      if (userLoggedIn) {
         try {
           const currUser = auth.currentUser;
           const docRef = doc(db, "locations", docID);

@@ -132,7 +132,6 @@ export default {
       } catch (err) {
         console.error("Error in socialLogin", err);
       }
-      window.location.reload();
     },
   },
 };
