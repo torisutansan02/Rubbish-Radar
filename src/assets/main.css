@@ -194,6 +194,8 @@
     top: 5%;
   }
   .scrollButton {
+    position: fixed;
+    z-index: 99;
     background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -202,7 +204,6 @@
     top: 20px;
     left: 20px;
     display: grid;
-    position: absolute;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     z-index: 99;
@@ -278,7 +279,8 @@
 
   nav {
     display: flex;
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     font-size: 1rem;
     right: 0;
     top: 0;
@@ -350,11 +352,10 @@
   }
 
   h1 {
-    font-size: 16px;
+    font-size: 40px;
     margin-bottom: 40px;
     font-weight: bolder;
     color: #00ffa2;
-    font-size: 40px;
     text-align: center;
   }
 
@@ -402,14 +403,16 @@
     top: 80px;
     left: 10px;
     display: grid;
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
   }
 
   nav {
     display: flex;
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     right: 0;
     top: 0;
     background-color: #31c48d;
@@ -450,7 +453,6 @@
 
   .pollpic {
     width: 100%;
-    margin: auto;
   }
 
   .logo {
@@ -545,9 +547,8 @@
   }
 
   .binpic {
-    object-fit: fill;
     width: 100%;
-    height: auto;
+    height: 100vh;
   }
 
   button:hover {
@@ -560,10 +561,8 @@
   }
 
   .social-button img {
-    object-fit: contain;
-    width: 7%;
-    height: auto;
-    text-align: left;
+    width: 20px;
+    text-align: center;
   }
 
   a {
@@ -624,24 +623,14 @@
 
   .social-button {
     background-color: #31c48d;
-    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
     transition: background-color 0.3s ease;
-    min-width: 180px;
-    min-height: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 110%;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    max-width: 100%;
-    width: 60%;
+    font-size: 16px;
+    width: 100%;
   }
 
   .inputBox {

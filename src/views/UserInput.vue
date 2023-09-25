@@ -18,7 +18,6 @@
 </template>
 
 <script>
-import { ref } from "vue";
 import { db } from "../firebaseResources";
 import {
   collection,
